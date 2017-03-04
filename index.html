@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>New York Times</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="nytimes.js"></script>
+
+
+</head>
+<body>
+
+<div class="jumbotron"> <span class="glyphicon glyphicon-book"></span> New York Times Search</div>
+
+<div id="searchParameters"><span class="glyphicon glyphicon-book"></span>Search Parameters</div>
+
+<form class="form-group">
+	<label>Search Term:</label>
+	<br>
+	<input id="searchTerm" type="text" name="searchText" placeholder="Search">
+	<br>
+	<label>Number of Records to Retrieve:</label>
+	<br>
+	<input type="text" name="number" id="numberOfRecordsToRetrieve">
+	<br>
+	<label>Start Year(Optional) YYYYMMDD:</label>
+	<br>
+	<input id="startYear" type="text" name="sYear">
+	<br>
+	<label>End Year(Optional) YYYYMMDD:</label>
+	<br>
+	<input id="endYear" type="text" name="eYear">
+	<br>
+	<button id="search" type="search" class="btn btn-info"><span class="glyphicon glyphicon-search">Search</button>
+	<button type="clearResults" class="btn btn-danger"><span class="glyphicon glyphicon-refresh"> Clear Results</button>
+</form>
+
+<div id="topArticles"><span class="glyphicon glyphicon-book"> Top Articles</div>
+
+
+</body>
+</html>
